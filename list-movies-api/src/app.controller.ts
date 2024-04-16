@@ -7,11 +7,11 @@ export class AppController {
   constructor(private readonly appService: MovieService) {}
 
   @Get()
-  getTracks(@Query('search') search: string) {
+  getMovies(@Query('search') search: string) {
     return this.appService.getMovies(search);
   }
   @Get(':id')
-  getTrackById(@Param('id') id: string) : Promise<IMovie> {
+  getMovieById(@Param('id') id: string) : Promise<IMovie> {
     return this.appService.getMovieById(id)
   }
 }

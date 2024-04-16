@@ -4,6 +4,7 @@ const app = express()
 const port = 3030
 
 app.use(express.json())
+app.use(express.static(path.join(__dirname, '../list_movies')))
 
 app.get('/movies', (req, res) => {
     const {search} = req.query

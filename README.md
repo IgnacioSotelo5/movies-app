@@ -1,7 +1,57 @@
-Esta es mi app creada para el ejercicio de practica dado.
+# Movies App
 
-Mi UI fue creada con React. Implemente un input de busqueda, y tambien una lista de pendientes para practicar contextos.
+A simple academic project to practice React, API integration, and state management. This app allows users to search for movies, view a list, and manage a to-do list for movies to watch.
 
-Para la api use NestJS y añadi una modificacion al metodo getMovies para recuperar la query y poder implementar busqueda por titulo.
+## Features
+- Search for movies by title
+- View a list of movies from an API
+- Add movies to a personal to-watch list
+- Practice with React Context for state management
 
-Tambien cree un pequeño servidor con express de donde recupero las peliculas.
+## Tech Stack
+- React
+- TypeScript
+- Vite
+- Express (mock API)
+- NestJS (API search endpoint)
+
+## Getting Started
+
+### Prerequisites
+- Node.js (v18+)
+- npm or yarn
+
+### Installation
+```bash
+git clone https://github.com/IgnacioSotelo5/movies-app.git
+cd movies-app
+npm install
+# or
+yarn install
+```
+
+### Running the App
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+The app will be available at `http://localhost:5173`.
+
+## Project Structure
+```
+movies-app/
+  src/
+    components/
+    context/
+    api/
+    ...
+```
+
+## Notes
+- This project was created for academic purposes and as a React practice exercise.
+- The API is mocked with Express and extended with a NestJS endpoint for search functionality.
+
+## License
+MIT
